@@ -38,6 +38,8 @@ word consists only of lowercase English letters.
 0 <= k <= word.length - 5
 */
 
+
+
 class Solution {
 public:
     long long all_substring(string word, int k)
