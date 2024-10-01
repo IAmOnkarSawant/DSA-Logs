@@ -40,10 +40,10 @@ public:
         unordered_map<int, int> mp;
         for(int i = 0; i < arr.size(); i++)
         {
-            int num = (arr[i] % k + k) % k;
+            int num = (arr[i] % k + k) % k; // handling neg numbers
             if(mp.find(num) == mp.end())
             {
-                if(num == 0)
+                if(num == 0)  // handling edge case
                     mp[0]++;
                 else
                     mp[k - num]++;
@@ -51,7 +51,7 @@ public:
             else
             {
                 mp[num]--;
-                if(mp[num] == 0)
+                if(mp[num] == 0)  // if some number count = 0 erase that number
                     mp.erase(num);
             }
         }
