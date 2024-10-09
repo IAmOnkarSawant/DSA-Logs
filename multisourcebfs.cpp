@@ -9,7 +9,7 @@ int main()
     unordered_set<int>safe_house;
     unordered_map<int , int>h_time;
 
-    for(int i = 0; i < L; i++)
+    for(int i = 0; i < L; i++) 
     {
         string s;
         cin>>s;
@@ -78,3 +78,5 @@ int main()
         cout<<"-1\n";
 
 }
+
+// contest question testing
