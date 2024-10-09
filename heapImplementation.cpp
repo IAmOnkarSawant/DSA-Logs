@@ -108,17 +108,17 @@ int main()
     vector<int> nums = {3, 1, 5, 7, 2, 4, 6};
     Heap* h = new Heap(nums);
 
-    h->print();  // Print the heap after construction
+    h->print(); 
 
-    h->push(10);  // Push a new element
-    h->print();   // Print the heap after push
+    h->push(10);  
+    h->print(); 
 
-    h->pop();     // Pop the top element
-    h->print();   // Print the heap after pop
+    h->pop();    
+    h->print();   
 
-    // Test decrease key
-    h->decrease_key(3, 0);  // Decrease the key at index 3 to 0
-    h->print();             // Print the heap after decreasing the key
+ 
+    h->decrease_key(3, 0);  
+    h->print();             
 
     return 0;
 }
