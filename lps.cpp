@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
-
+#include <bits/stdc++.h>
 class Solution {
 public:
     void lps_helper(std::string& s, std::vector<int>& lps) {
