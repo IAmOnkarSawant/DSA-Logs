@@ -23,10 +23,17 @@ public:
         {
             for(int j = 0; j < n-i-1; j++)
             {
-                if(nums[j+1] < nums[j] && set_bits[j] == set_bits[j+1])
+                if(nums[j+1] < nums[j])
                 {
-                    swap(nums[j], nums[j+1]);
-                    swap(set_bits[j], set_bits[j+1]);
+                    if(set_bits[j] == set_bits[j+1])
+                    {
+                        swap(nums[j], nums[j+1]);
+                        swap(set_bits[j], set_bits[j+1]);
+                    }
+                    else
+                    {
+                        return 0;
+                    }
                 }
             }
         }
@@ -35,6 +42,6 @@ public:
         // {
         //     cout<<nums[i]<<" ";
         // }
-        return is_sorted(nums.begin(), nums.end());
+        return 1;
     }
 };
