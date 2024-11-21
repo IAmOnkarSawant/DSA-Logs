@@ -62,11 +62,11 @@ public:
         {
             for(auto ele: vec)
             {
-                cout<<ele<<" ";
+                // cout<<ele<<" ";
                 if(ele == 1)
                     cnt++;
             }
-            cout<<"\n";
+            // cout<<"\n";
         }
         return cnt;
     }
